@@ -17,11 +17,11 @@ class AllTheBooks extends Component {
         return(
             <>
             <div className="bg-warning bg-opacity-25 p-5">
-                <Form onSubmit={this.handleSubmit} className="">
-            <FormControl 
-                type="text" 
-                placeholder="Select a category (fantasy, history, horror, romance, scifi)" 
-                onChange={this.handleChange} />
+            <Form>
+                <FormControl 
+                    type="text" 
+                    placeholder="Select a category (fantasy, history, horror, romance, scifi)" 
+                    onChange={this.handleChange} />
             </Form>
             </div>
             
