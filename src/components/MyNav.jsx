@@ -5,7 +5,6 @@ function MyNav() {
         <Nav
         className="justify-content-center p-3 bg-secondary"
         activeKey="/home"
-        onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
         >
             <Nav.Item>
                 <Nav.Link className="text-light" href="#">Home</Nav.Link>

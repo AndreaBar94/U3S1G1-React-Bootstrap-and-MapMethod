@@ -7,12 +7,12 @@ import MyFooter from "./components/MyFooter";
 
 function App() {
 	return (
-		<div className="App">
+		<>
 			<MyNav/>
 			<Welcome/>
-			{/* <AllTheBooks/>
-			<MyFooter/> */}
-		</div>
+			<AllTheBooks/>
+			<MyFooter/> 
+		</>
 	);
 }
 
