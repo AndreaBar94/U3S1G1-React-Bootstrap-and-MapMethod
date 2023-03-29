@@ -7,7 +7,7 @@ function MyNav() {
         activeKey="/home"
         >
             <Nav.Item>
-                <Nav.Link className="text-dark" href="#">Home</Nav.Link>
+                <Nav.Link className="text-dark" href="#" id="home">Home</Nav.Link>
             </Nav.Item>
             <Nav.Item>
                 <Nav.Link className="text-dark" href="#">About</Nav.Link>
