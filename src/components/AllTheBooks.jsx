@@ -16,13 +16,15 @@ class AllTheBooks extends Component {
     render(){
         return(
             <>
-            <Form onSubmit={this.handleSubmit} className="mb-3">
+            <div className="bg-warning bg-opacity-25 p-5">
+                <Form onSubmit={this.handleSubmit} className="">
             <FormControl 
-            type="text" 
-            placeholder="Select a category (fantasy, history, horror, romance, scifi)" 
-            onChange={this.handleChange} 
-            className="mr-sm-2" />
-        </Form>
+                type="text" 
+                placeholder="Select a category (fantasy, history, horror, romance, scifi)" 
+                onChange={this.handleChange} />
+            </Form>
+            </div>
+            
 
             {this.state.initialValue === 'scifi' && (
             <Row className="bg-warning bg-opacity-50 p-5">
