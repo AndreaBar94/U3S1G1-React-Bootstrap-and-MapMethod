@@ -28,8 +28,8 @@ class AllTheBooks extends Component {
 
             {this.state.initialValue === 'scifi' && (
             <Row className="bg-warning bg-opacity-50 p-5">
-                {scifi.map((scifibook, index) => (
-                <Col key={`scifi-book-${index}`} className="col-12 col-md-4 col-lg-3 col-xl-2 pb-4">
+                {scifi.map((scifibook) => (
+                <Col key={`scifi-book-${scifibook.asin}`} className="col-12 col-md-4 col-lg-3 col-xl-2 pb-4">
                     <Card >
                     <Card.Img src={scifibook.img} className="img-fluid contain" />
                     <Card.Body>
@@ -46,8 +46,8 @@ class AllTheBooks extends Component {
 
             {this.state.initialValue === 'fantasy' && (
             <Row className="bg-warning bg-opacity-50 p-5">
-                {fantasy.map((fantasybook, index) => (
-                <Col key={`fantasy-book-${index}`} className="col-12 col-md-4 col-lg-3 col-xl-2 pb-4">
+                {fantasy.map((fantasybook) => (
+                <Col key={`fantasy-book-${fantasybook.asin}`} className="col-12 col-md-4 col-lg-3 col-xl-2 pb-4">
                     <Card >
                     <Card.Img src={fantasybook.img} className="img-fluid contain" />
                     <Card.Body>
@@ -64,8 +64,8 @@ class AllTheBooks extends Component {
 
             {this.state.initialValue === 'history' && (
             <Row className="bg-warning bg-opacity-50 p-5">
-                {history.map((historybook, index) => (
-                <Col key={`history-book-${index}`} className="col-12 col-md-4 col-lg-3 col-xl-2 pb-4">
+                {history.map((historybook) => (
+                <Col key={`history-book-${historybook.asin}`} className="col-12 col-md-4 col-lg-3 col-xl-2 pb-4">
                     <Card >
                     <Card.Img src={historybook.img} className="img-fluid contain" />
                     <Card.Body>
@@ -82,8 +82,8 @@ class AllTheBooks extends Component {
 
             {this.state.initialValue === 'horror' && (
             <Row className="bg-warning bg-opacity-50 p-5">
-                {horror.map((horrorbook, index) => (
-                <Col key={`horror-book-${index}`} className="col-12 col-md-4 col-lg-3 col-xl-2 pb-4">
+                {horror.map((horrorbook) => (
+                <Col key={`horror-book-${horrorbook.asin}`} className="col-12 col-md-4 col-lg-3 col-xl-2 pb-4">
                     <Card >
                     <Card.Img src={horrorbook.img} className="img-fluid contain" />
                     <Card.Body>
@@ -100,8 +100,8 @@ class AllTheBooks extends Component {
 
             {this.state.initialValue === 'romance' && (
             <Row className="bg-warning bg-opacity-50 p-5">
-                {romance.map((romancebook, index) => (
-                <Col key={`romance-book-${index}`} className="col-12 col-md-4 col-lg-3 col-xl-2 pb-4">
+                {romance.map((romancebook) => (
+                <Col key={`romance-book-${romancebook.asin}`} className="col-12 col-md-4 col-lg-3 col-xl-2 pb-4">
                     <Card >
                     <Card.Img src={romancebook.img} className="img-fluid contain" />
                     <Card.Body>
